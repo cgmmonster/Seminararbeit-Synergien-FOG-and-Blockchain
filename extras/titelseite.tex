@@ -1,0 +1,95 @@
+% Die Titelseite
+% Im folgenden kommen ein paar Variablen, die auszufüllen sind
+% Bisher steht dort nur Musterinhalt
+% Außerdem müssen zei Dateien erstellt werden, Bild/Logo/Emblem des Fachgebietes
+% sowie der Universität
+
+
+% Maximilian Rautland
+\newcommand{\trauthor}{Maximilian Rautland}
+% \newcommand{\trstrasse}{Musterstraße 666}
+\newcommand{\trmatrikelnummer}{465498}
+\newcommand{\tremail}{maximilian.rautland@fom-net.de}
+
+% Michael Heichler
+\newcommand{\trauthortwo}{Michael Heichler}
+\newcommand{\trmatrikelnummertwo}{465475}
+\newcommand{\tremailtwo}{michael.heichler@fom-net.de}
+% \newcommand{\trort}{007 Musterstadt}
+% \newcommand{\trbetreuer}{Dipl. Ing. Peter Wunderlich}
+
+\newcommand{\trtitle}{Synergien zwischen Blockchain und Fog Computing}
+\newcommand{\trtype}{Seminararbeit}
+
+\newcommand{\trprof}{Prof. Dr. Gregor Hülsken}
+\newcommand{\trfachgebiet}{IT Infrastruktur}
+% \newcommand{\trinstitut}{gute Wissenschaft}
+% \newcommand{\trfakultaet}{IV Wissenschaft}
+
+\newcommand{\truni}{Fachhochschule für Oekonomie \& Management Münster}
+
+\newcommand{\trdate}{\today}
+
+\thispagestyle{empty}
+
+% Kopfzeile mit Logos.
+% Eventuell die \hspace{} je nach Logogröße anpassen
+\begin{tabular}{lcr}
+  \includegraphics[scale=0.3]{fom} & % dein_unilogo.jpg/.eps im Verzeichnis "bilder" ablegen
+  %\hspace{2cm} \truni \hspace{2cm} &
+  % \includegraphics[scale=0.8]{dein_fglogo} % dein_fglogo.jpg/.eps im Verzeichnis "bilder" ablegen, Fachgebietslogo
+  \\
+\end{tabular}
+
+\rule{\textwidth}{0.4pt}
+
+\vspace{2.5cm}
+\begin{center}
+  \textbf{\LARGE \trtitle}
+\end{center}
+\vspace{2cm}
+
+\begin{center}
+  \textbf{\trtype} \\
+  am Fachgebiet \trfachgebiet \\
+%  \trprof \\
+%  Institut für \trinstitut \\
+%  Fakultät \trfakultaet \\
+  \truni \\[0.5cm]
+%  vorgelegt von \\
+%  \textbf{\trauthor}
+\end{center}
+
+\vspace{1cm}
+
+
+%\begin{center}
+%\begin{tabular}{ll}
+%Betreuer: & \trbetreuer \\
+%\end{tabular}
+%\end{center}
+
+\vfill
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{llll}
+		\toprule
+		Autoren & Matrikelnr. & E-Mail\\
+		\midrule
+		\trauthortwo &  \trmatrikelnummertwo & \tremailtwo \\
+		\trauthor & \trmatrikelnummer & \tremail \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{flushleft}
+	\centering
+	{\large
+		Betreuung: \\
+		\trprof \\
+		\vspace*{4ex}
+		\trdate \\}
+\end{flushleft}
+
+\rule{\textwidth}{0.4pt}
